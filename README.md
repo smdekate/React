@@ -38,3 +38,29 @@
 ### After React
 1) React is not a complete solution (No SEO, Browser render of JS, no routing)
 2) Framework (Next.js, Gatsby, Remix)
+
+## Lecture 2
+
+### React New Documentation is [here](https://react.dev/)
+
+### React is a core library
+1) react-dom: it is use to make web apps
+2) react-native: it is use to make mobile apps
+
+#### npm: node package manager
+#### npx: node package executor
+
+### different ways to create a react app
+1) npx create-react-app: old way (not recommended), time consuming and heavy
+2) npm create vite@latest: latest way (recommended): fast as vite is french work for quick or fast
+
+### Always open package.json first and try to understand it
+1) there is a way to read the project
+2) in the production build folder sereved to the user and not the react folder
+3) create-react-app is not a good way so we will be using vite (pronounced as veet)
+4) dev dependencies dont go to the production, we use it during delevelopement only
+5) vite is lighter than CRA (create-react-app)
+6) we are going to be inside of src folder almost always
+
+
+### Visit vite [here](https://vitejs.dev/)
