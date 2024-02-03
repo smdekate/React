@@ -64,3 +64,22 @@
 
 
 ### Visit vite [here](https://vitejs.dev/)
+
+## Lecture 3
+- whenever javascript runs it run alone we must include it into our html file using the script tag and there is not exception and this process of injection is known as "Hydration". React script do the hydration behind the scense. But vite does add the script tag directly in the index.html via which hydration happens
+
+- all the dependencies reside inside the node_module folder and we dont push this repository into the github
+
+- there are mainly two file in the src directory (if you use create-react app) index.js and App.js
+
+- most of the things happens in the src and public folder
+
+- there is only one page which gets displyaed to the user and it is index.html and this is why it is called SPA (Single Page Application)
+
+- react creates it's own virtual DOM (using ReactDOM) and compare it with the Main DOM and change only updated nodes in the DOM tree (more on this when we learn about React Fiber)
+
+### Follow these conventions while using react in vite
+1) Component names must start with Uppercase later
+2) use .jsx extension whenever you are returning jsx
+3) function names must match with the file name including capitalization
+4) jsx must be wrapped inside enclosing tag like (<></> fragment)
