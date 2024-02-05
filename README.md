@@ -83,3 +83,13 @@
 2) use .jsx extension whenever you are returning jsx
 3) function names must match with the file name including capitalization
 4) jsx must be wrapped inside enclosing tag like (<></> fragment)
+
+## Lecture 3
+
+### [useState](https://react.dev/reference/react/useState) hook
+- you can't directly update things on the browser, even if the variable is updated.
+- even though variables are being updated but it is not reflected because it is react which controls the updation of UI 
+- It is react which decide when thing will be updated in the UI
+- this "useState" hook is responsible for changing the state (change doesen't mean updating variable but propogating changes in the DOM)
+- useState hook return an array containing a variable and a function via which we can update the variable
+- using this hook we can easily update the same variable everywhere
