@@ -84,7 +84,7 @@
 3) function names must match with the file name including capitalization
 4) jsx must be wrapped inside enclosing tag like (<></> fragment)
 
-## Lecture 3
+## Lecture 4
 
 ### [useState](https://react.dev/reference/react/useState) hook
 - you can't directly update things on the browser, even if the variable is updated.
@@ -93,3 +93,16 @@
 - this "useState" hook is responsible for changing the state (change doesen't mean updating variable but propogating changes in the DOM)
 - useState hook return an array containing a variable and a function via which we can update the variable
 - using this hook we can easily update the same variable everywhere
+
+## Lecture 5 [Fibre](https://github.com/acdlite/react-fiber-architecture), Virtual DOM and Reconcilliation
+- In this lecture createRoot method is discussed and how it works behind the scene
+- this 'createRoot' method create a DOM like structure behind the scene and compare it with main DOM and only change the updated nodes. But browser removes the entire DOM and creates a new DOM (page reload) takes time. and this is what virtual DOM is
+- react Use Fiber algorithm to update virtual DOM
+- The goal of React Fiber is to increase its suitability for areas like animation, layout, and gestures. Its headline feature is incremental rendering: the ability to split rendering work into chunks and spread it out over multiple frames.
+- Other key features include the ability to pause, abort, or reuse work as new updates come in; the ability to assign priority to different types of updates; and new concurrency primitives.
+- Reconciliation is the algorithm behind what is popularly understood as the "virtual DOM."
+- primary goal of Fiber is to enable React to take advantage of scheduling. Specifically, we need to be able to
+- 1)  pause work and come back to it later.
+- 2) assign priority to different types of work.
+- 3) reuse previously completed work.
+- 4) abort work if it's no longer needed.
