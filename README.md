@@ -106,3 +106,8 @@
 - 2) assign priority to different types of work.
 - 3) reuse previously completed work.
 - 4) abort work if it's no longer needed.
+
+## Lecture 6 React Router
+
+- we use Link tag instead of a tag because a tag refreshes the page and we dont refresh the page in react
+- Navlink provides even more additional funcationality like "isActive", which allows us to inject variable, which tells whether we are on the perticular page or not based on the value of "isActive"
